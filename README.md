@@ -10,9 +10,13 @@ npx react-native bundle --platform android --dev false --entry-file index.js --b
 
 cd android
 
-### Step 3: Now in this android folder, run this command
+### Step 3: Now in this android folder, run this command (will create Debug APK)
 
 ./gradlew assembleDebug
+
+### Also you can create Release APK ( Don't forget to create signing key for release. Look here -> https://reactnative.dev/docs/signed-apk-android )
+
+./gradlew assembleRelease
 
 There! you’ll find the apk file in the following path:
 yourProject/android/app/build/outputs/apk/debug/app-debug.apk
