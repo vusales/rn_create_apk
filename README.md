@@ -2,7 +2,7 @@
 
 ## Generate apk in 3 steps !
 
-### Step 1: Go to the root of the project in the terminal and run the below command:
+### Step 1: Go to the root of the project in the terminal and run the below command ( If you have the React Native CLI installed remove npx ):
 
 npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
 
@@ -10,7 +10,7 @@ npx react-native bundle --platform android --dev false --entry-file index.js --b
 
 cd android
 
-### Step 3: Now in this android folder, run this command (will create Debug APK)
+### Step 3: Now in this android folder, run this command (will create Debug APK). 
 
 ./gradlew assembleDebug
 
